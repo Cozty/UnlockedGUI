@@ -1,0 +1,648 @@
+if game.CoreGui:FindFirstChild("UnlockedGUI") then
+	game.CoreGui:FindFirstChild("UnlockedGUI"):Destroy()
+end
+
+
+
+-- Instances:
+
+local UnlockedGUI = Instance.new("ScreenGui")
+local OpeningLogo = Instance.new("ImageLabel")
+local Frame = Instance.new("Frame")
+local Header = Instance.new("ImageLabel")
+local MainFrame = Instance.new("ImageLabel")
+local Scripts = Instance.new("Frame")
+local Admin = Instance.new("TextButton")
+local Repl = Instance.new("TextButton")
+local AFK = Instance.new("TextButton")
+local ImageLabel = Instance.new("ImageLabel")
+local GameScripts = Instance.new("ScrollingFrame")
+local Frame_2 = Instance.new("Frame")
+local NinjaLeg = Instance.new("ImageButton")
+local VehicleSim = Instance.new("ImageButton")
+local CounterBlox = Instance.new("ImageButton")
+local PrisonLife = Instance.new("ImageButton")
+local PF = Instance.new("ImageButton")
+local ImageButton = Instance.new("ImageButton")
+local ImageButton_2 = Instance.new("ImageButton")
+local ImageButton_3 = Instance.new("ImageButton")
+local ImageButton_4 = Instance.new("ImageButton")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Settings = Instance.new("Frame")
+local BlurSize = Instance.new("TextBox")
+local SetBlur = Instance.new("TextButton")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local DestroyGUI = Instance.new("TextButton")
+local Title = Instance.new("ImageLabel")
+local MenuButt = Instance.new("ImageButton")
+local Options = Instance.new("ImageLabel")
+local CustomScripts = Instance.new("TextButton")
+local Settings_2 = Instance.new("TextButton")
+local GameScripts_2 = Instance.new("TextButton")
+local Credits = Instance.new("TextButton")
+local Description = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+
+--[[
+	Properties:
+--]]
+
+UnlockedGUI.Name = "UnlockedGUI"
+UnlockedGUI.Parent = game.CoreGui
+UnlockedGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+OpeningLogo.Name = "OpeningLogo"
+OpeningLogo.Parent = UnlockedGUI
+OpeningLogo.Active = true
+OpeningLogo.BackgroundColor3 = Color3.new(1, 1, 1)
+OpeningLogo.BackgroundTransparency = 1
+OpeningLogo.Position = UDim2.new(0.418000013, 0, -50, 0)
+OpeningLogo.Selectable = true
+OpeningLogo.Size = UDim2.new(0, 190, 0, 190)
+OpeningLogo.Image = "http://www.roblox.com/asset/?id=4323766273"
+
+Frame.Parent = UnlockedGUI
+Frame.BackgroundColor3 = Color3.new(1, 1, 1)
+Frame.Position = UDim2.new(0.191, 0, 0.224999994, 0)
+Frame.Size = UDim2.new(0, 461, 0, 305)
+Frame.Visible = false
+
+Header.Name = "Header"
+Header.Parent = Frame
+Header.BackgroundColor3 = Color3.new(1, 1, 1)
+Header.BackgroundTransparency = 1
+Header.BorderSizePixel = 0
+Header.Position = UDim2.new(-0.00124400505, 0, 0.00610461645, 0)
+Header.Selectable = true
+Header.Size = UDim2.new(0, 461, 0, 196)
+Header.ZIndex = 2
+Header.Image = "http://www.roblox.com/asset/?id=4323806718"
+Header.ImageTransparency = 1
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Frame
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.new(1, 1, 1)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(-0.00124400505, 0, 0, 0)
+MainFrame.Selectable = true
+MainFrame.Size = UDim2.new(0, 461, 0, 305)
+MainFrame.Image = "http://www.roblox.com/asset/?id=4323795861"
+
+Scripts.Name = "Scripts"
+Scripts.Parent = MainFrame
+Scripts.BackgroundColor3 = Color3.new(0.0862745, 0.0862745, 0.0862745)
+Scripts.BorderSizePixel = 0
+Scripts.Position = UDim2.new(0.0368763544, 0, 0.160655737, 0)
+Scripts.Size = UDim2.new(0, 426, 0, 249)
+Scripts.Visible = false
+
+Admin.Name = "Admin"
+Admin.Parent = Scripts
+Admin.BackgroundColor3 = Color3.new(1, 1, 1)
+Admin.BackgroundTransparency = 1
+Admin.Position = UDim2.new(0.0305164326, 0, 0.036144577, 0)
+Admin.Size = UDim2.new(0, 115, 0, 41)
+Admin.Font = Enum.Font.SourceSans
+Admin.Text = "Inf Yield"
+Admin.TextColor3 = Color3.new(0, 0, 0)
+Admin.TextSize = 30
+Admin.TextWrapped = true
+
+Repl.Name = "Repl"
+Repl.Parent = Scripts
+Repl.BackgroundColor3 = Color3.new(1, 1, 1)
+Repl.BackgroundTransparency = 1
+Repl.Position = UDim2.new(0.0305164326, 0, 0.24899599, 0)
+Repl.Size = UDim2.new(0, 115, 0, 36)
+Repl.Font = Enum.Font.SourceSans
+Repl.Text = "Replication"
+Repl.TextColor3 = Color3.new(0, 0, 0)
+Repl.TextSize = 25
+Repl.TextWrapped = true
+
+AFK.Name = "AFK"
+AFK.Parent = Scripts
+AFK.BackgroundColor3 = Color3.new(1, 1, 1)
+AFK.BackgroundTransparency = 1
+AFK.Position = UDim2.new(0.0305164326, 0, 0.437750995, 0)
+AFK.Size = UDim2.new(0, 115, 0, 36)
+AFK.Font = Enum.Font.SourceSans
+AFK.Text = "AntiAfk"
+AFK.TextColor3 = Color3.new(0, 0, 0)
+AFK.TextSize = 25
+AFK.TextWrapped = true
+
+ImageLabel.Parent = Scripts
+ImageLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel.BorderSizePixel = 2
+ImageLabel.Size = UDim2.new(0, 426, 0, 249)
+ImageLabel.ZIndex = 0
+ImageLabel.Image = "http://www.roblox.com/asset/?id=4323795861"
+
+GameScripts.Name = "GameScripts"
+GameScripts.Parent = MainFrame
+GameScripts.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+GameScripts.BorderColor3 = Color3.new(0, 0, 0)
+GameScripts.BorderSizePixel = 0
+GameScripts.Position = UDim2.new(0.0325379595, 0, 0.15472132, 0)
+GameScripts.Size = UDim2.new(0, 434, 0, 249)
+GameScripts.Visible = false
+
+Frame_2.Parent = GameScripts
+Frame_2.BackgroundColor3 = Color3.new(0.203922, 0.203922, 0.203922)
+Frame_2.BorderSizePixel = 0
+Frame_2.Size = UDim2.new(0, 420, 0, 324)
+
+NinjaLeg.Name = "NinjaLeg"
+NinjaLeg.Parent = Frame_2
+NinjaLeg.BackgroundColor3 = Color3.new(1, 1, 1)
+NinjaLeg.Position = UDim2.new(0.0393955782, 0, 0.057241179, 0)
+NinjaLeg.Size = UDim2.new(0, 89, 0, 89)
+NinjaLeg.Image = "http://www.roblox.com/asset/?id=4333512297"
+
+VehicleSim.Name = "VehicleSim"
+VehicleSim.Parent = Frame_2
+VehicleSim.BackgroundColor3 = Color3.new(1, 1, 1)
+VehicleSim.Position = UDim2.new(0.408443213, 0, 0.057241179, 0)
+VehicleSim.Size = UDim2.new(0, 89, 0, 89)
+VehicleSim.Image = "http://www.roblox.com/asset/?id=4333551119"
+
+CounterBlox.Name = "CounterBlox"
+CounterBlox.Parent = Frame_2
+CounterBlox.BackgroundColor3 = Color3.new(1, 1, 1)
+CounterBlox.Position = UDim2.new(0.763205111, 0, 0.057241179, 0)
+CounterBlox.Size = UDim2.new(0, 89, 0, 89)
+CounterBlox.Image = "http://www.roblox.com/asset/?id=4333582980"
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = Frame_2
+PrisonLife.BackgroundColor3 = Color3.new(1, 1, 1)
+PrisonLife.Position = UDim2.new(0.0465384349, 0, 0.449216485, 0)
+PrisonLife.Size = UDim2.new(0, 89, 0, 89)
+PrisonLife.Image = "http://www.roblox.com/asset/?id=4333593415"
+
+PF.Name = "PF"
+PF.Parent = Frame_2
+PF.BackgroundColor3 = Color3.new(1, 1, 1)
+PF.Position = UDim2.new(0.415586084, 0, 0.449216485, 0)
+PF.Size = UDim2.new(0, 89, 0, 89)
+PF.Image = "http://www.roblox.com/asset/?id=4333992943"
+
+ImageButton.Parent = Frame_2
+ImageButton.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton.Position = UDim2.new(0.770347953, 0, 0.449216485, 0)
+ImageButton.Size = UDim2.new(0, 89, 0, 89)
+ImageButton.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ImageButton_2.Parent = Frame_2
+ImageButton_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_2.Position = UDim2.new(0.0393955782, 0, 0.831932545, 0)
+ImageButton_2.Size = UDim2.new(0, 89, 0, 89)
+ImageButton_2.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ImageButton_3.Parent = Frame_2
+ImageButton_3.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_3.Position = UDim2.new(0.408443213, 0, 0.831932545, 0)
+ImageButton_3.Size = UDim2.new(0, 89, 0, 89)
+ImageButton_3.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ImageButton_4.Parent = Frame_2
+ImageButton_4.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageButton_4.Position = UDim2.new(0.763205111, 0, 0.831932545, 0)
+ImageButton_4.Size = UDim2.new(0, 89, 0, 89)
+ImageButton_4.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+ImageLabel_2.Parent = Frame_2
+ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_2.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_2.BorderSizePixel = 2
+ImageLabel_2.Size = UDim2.new(0, 420, 0, 685)
+ImageLabel_2.ZIndex = 0
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=4323795861"
+
+Settings.Name = "Settings"
+Settings.Parent = MainFrame
+Settings.BackgroundColor3 = Color3.new(0.164706, 0.164706, 0.164706)
+Settings.Position = UDim2.new(0.0477223434, 0, 0.177049175, 0)
+Settings.Size = UDim2.new(0, 414, 0, 250)
+Settings.Visible = false
+
+BlurSize.Name = "BlurSize"
+BlurSize.Parent = Settings
+BlurSize.BackgroundColor3 = Color3.new(1, 1, 1)
+BlurSize.BackgroundTransparency = 1
+BlurSize.Position = UDim2.new(0.879227042, 0, 0.583999991, 0)
+BlurSize.Size = UDim2.new(0, 40, 0, 38)
+BlurSize.Font = Enum.Font.SourceSans
+BlurSize.PlaceholderText = "25"
+BlurSize.Text = ""
+BlurSize.TextColor3 = Color3.new(0, 0, 0)
+BlurSize.TextSize = 14
+
+SetBlur.Name = "SetBlur"
+SetBlur.Parent = Settings
+SetBlur.BackgroundColor3 = Color3.new(1, 1, 1)
+SetBlur.BackgroundTransparency = 1
+SetBlur.Position = UDim2.new(0.760869563, 0, 0.583999991, 0)
+SetBlur.Size = UDim2.new(0, 41, 0, 41)
+SetBlur.Font = Enum.Font.SourceSans
+SetBlur.Text = "Set Blur"
+SetBlur.TextColor3 = Color3.new(0, 0, 0)
+SetBlur.TextSize = 14
+
+ImageLabel_3.Parent = Settings
+ImageLabel_3.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_3.BorderColor3 = Color3.new(0, 0, 0)
+ImageLabel_3.BorderSizePixel = 2
+ImageLabel_3.Size = UDim2.new(0, 414, 0, 251)
+ImageLabel_3.ZIndex = 0
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=4323795861"
+
+DestroyGUI.Name = "DestroyGUI"
+DestroyGUI.Parent = Settings
+DestroyGUI.BackgroundColor3 = Color3.new(1, 1, 1)
+DestroyGUI.BackgroundTransparency = 1
+DestroyGUI.Position = UDim2.new(0.734299541, 0, 0.284000009, 0)
+DestroyGUI.Size = UDim2.new(0, 109, 0, 40)
+DestroyGUI.Font = Enum.Font.SourceSans
+DestroyGUI.Text = "DestroyGUI"
+DestroyGUI.TextColor3 = Color3.new(0, 0, 0)
+DestroyGUI.TextSize = 14
+
+Title.Name = "Title"
+Title.Parent = Frame
+Title.Active = true
+Title.BackgroundColor3 = Color3.new(1, 1, 1)
+Title.BackgroundTransparency = 1
+Title.Position = UDim2.new(0.182635322, 0, 0.0257767476, 0)
+Title.Selectable = true
+Title.Size = UDim2.new(0, 294, 0, 34)
+Title.Image = "http://www.roblox.com/asset/?id=4323854652"
+
+MenuButt.Name = "MenuButt"
+MenuButt.Parent = Frame
+MenuButt.BackgroundColor3 = Color3.new(1, 1, 1)
+MenuButt.BackgroundTransparency = 1
+MenuButt.Position = UDim2.new(0.0151250679, 0, 0.0257767476, 0)
+MenuButt.Size = UDim2.new(0, 34, 0, 28)
+MenuButt.Image = "http://www.roblox.com/asset/?id=4323831073"
+MenuButt.ImageColor3 = Color3.new(1, 0.054902, 0.509804)
+
+Options.Name = "Options"
+Options.Parent = Frame
+Options.Active = true
+Options.BackgroundColor3 = Color3.new(1, 1, 1)
+Options.BorderSizePixel = 0
+Options.Position = UDim2.new(-0.00126466155, 0, 0.158000007, 0)
+Options.Selectable = true
+Options.Size = UDim2.new(0, 105, 0, 256)
+Options.ZIndex = 0
+Options.Image = "http://www.roblox.com/asset/?id=4323795861"
+
+CustomScripts.Name = "CustomScripts"
+CustomScripts.Parent = Options
+CustomScripts.BackgroundColor3 = Color3.new(1, 1, 1)
+CustomScripts.BackgroundTransparency = 1
+CustomScripts.Position = UDim2.new(0, 0, 0.0234375, 0)
+CustomScripts.Size = UDim2.new(0, 105, 0, 50)
+CustomScripts.Font = Enum.Font.SourceSans
+CustomScripts.Text = "Scripts"
+CustomScripts.TextColor3 = Color3.new(0, 0, 0)
+CustomScripts.TextSize = 23
+CustomScripts.TextWrapped = true
+
+Settings_2.Name = "Settings"
+Settings_2.Parent = Options
+Settings_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Settings_2.BackgroundTransparency = 1
+Settings_2.Position = UDim2.new(0, 0, 0.21875, 0)
+Settings_2.Size = UDim2.new(0, 105, 0, 50)
+Settings_2.Font = Enum.Font.SourceSans
+Settings_2.Text = "Settings"
+Settings_2.TextColor3 = Color3.new(0, 0, 0)
+Settings_2.TextSize = 23
+Settings_2.TextWrapped = true
+
+GameScripts_2.Name = "GameScripts"
+GameScripts_2.Parent = Options
+GameScripts_2.BackgroundColor3 = Color3.new(1, 1, 1)
+GameScripts_2.BackgroundTransparency = 1
+GameScripts_2.Position = UDim2.new(0, 0, 0.3984375, 0)
+GameScripts_2.Size = UDim2.new(0, 105, 0, 50)
+GameScripts_2.Font = Enum.Font.SourceSans
+GameScripts_2.Text = "Gamescripts"
+GameScripts_2.TextColor3 = Color3.new(0, 0, 0)
+GameScripts_2.TextSize = 19
+GameScripts_2.TextWrapped = true
+
+Credits.Name = "Credits"
+Credits.Parent = Options
+Credits.BackgroundColor3 = Color3.new(1, 1, 1)
+Credits.BackgroundTransparency = 1
+Credits.Position = UDim2.new(0, 0, 0.80078125, 0)
+Credits.Size = UDim2.new(0, 105, 0, 50)
+Credits.Font = Enum.Font.SourceSans
+Credits.Text = "Credits"
+Credits.TextColor3 = Color3.new(0, 0, 0)
+Credits.TextSize = 19
+Credits.TextWrapped = true
+
+Description.Name = "Description"
+Description.Parent = Frame
+Description.BackgroundColor3 = Color3.new(1, 1, 1)
+Description.BorderSizePixel = 0
+Description.Position = UDim2.new(0.707000017, 0, 0.178000003, 0)
+Description.Size = UDim2.new(0, 135, 0, 182)
+Description.ZIndex = 0
+Description.Image = "http://www.roblox.com/asset/?id=4323795861"
+
+TextLabel.Parent = Description
+TextLabel.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel.BackgroundTransparency = 1
+TextLabel.Size = UDim2.new(0, 134, 0, 181)
+TextLabel.SizeConstraint = Enum.SizeConstraint.RelativeYY
+TextLabel.ZIndex = 0
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Description"
+TextLabel.TextColor3 = Color3.new(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+TextLabel_2.BackgroundTransparency = 1
+TextLabel_2.Position = UDim2.new(0.841648579, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 71, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "V:1.0.2"
+TextLabel_2.TextColor3 = Color3.new(0, 0, 0)
+TextLabel_2.TextSize = 14
+
+--[[
+	 Scripts:
+--]]
+
+local function AJJGV_fake_script() -- UnlockedGUI.LocalScript 
+	local script = Instance.new('LocalScript', UnlockedGUI)
+
+	--[[made by Cozty#8287
+		
+		
+		
+	--]]
+	
+	local frame = script.Parent.Frame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+	local Opened = false
+	local TS = game:GetService("TweenService")
+	local TIOpen = TweenInfo.new(4,Enum.EasingStyle.Linear,Enum.EasingDirection.Out)
+	local player = game.Players.LocalPlayer
+	local UIS = game:GetService("UserInputService")
+	local GUIopen = false
+	local mouse = player:GetMouse()
+	local gamescripts = script.Parent.Frame.MainFrame.GameScripts
+	local descript = script.Parent.Frame.Description
+	local TI = TweenInfo.new(0.2,Enum.EasingStyle.Linear,Enum.EasingDirection.Out)
+	--{0.996, 0},{0.178, 0}
+	local descriptionOpen = TS:Create(descript,TI,{Position=UDim2.new(0.996, 0,0.178, 0)})
+	local descriptclose = TS:Create(descript,TI,{Position=UDim2.new(0.707, 0,0.178, 0)})
+	local sound  = Instance.new("Sound")
+	sound.SoundId = "rbxassetid://156286438"
+	sound.Parent = script.Parent
+	
+	local ComeDownLogo = TS:Create(script.Parent.OpeningLogo,TIOpen,{Position=UDim2.new(0.418, 0,0.355, 0)})
+	local ComeUPLogo = TS:Create(script.Parent.OpeningLogo,TIOpen,{Position=UDim2.new(0.418, 0,-50, 0)})
+	ComeDownLogo:Play()
+	wait(4.2)
+	ComeUPLogo:Play()
+	
+	local blur = Instance.new("BlurEffect")
+	blur.Size = 25
+	blur.Parent = game.Workspace.CurrentCamera
+	blur.Enabled = false
+	
+	
+	UIS.InputBegan:Connect(function(key,gpe)
+		if key.KeyCode ==  Enum.KeyCode.Quote and not gpe and GUIopen == false  then
+			script.Parent.Frame.Visible = true
+			GUIopen = true
+			blur.Enabled = true
+		elseif key.KeyCode ==  Enum.KeyCode.Quote and not gpe and GUIopen == true then
+			script.Parent.Frame.Visible = false
+			GUIopen = false
+			blur.Enabled = false
+		end
+	end)
+	wait(4.5)
+	script.Parent.OpeningLogo:Destroy()
+	
+	
+	
+	local optionsframe = script.Parent.Frame.Options
+	
+		
+		local Open = TS:Create(optionsframe,TI,{Position=UDim2.new(-0.229, 0,0.158, 0)})
+		local close = TS:Create(optionsframe,TI,{Position=UDim2.new(-0.001, 0,0.161)})
+		
+		
+	
+	script.Parent.Frame.MenuButt.MouseButton1Click:Connect(function()
+		sound:Play()
+		if Opened == false then
+			
+			Open:Play()
+			Opened =true
+		elseif Opened==true then
+			sound:Play()
+			close:Play()
+			Opened = false
+		end
+	end)
+	
+	script.Parent.Frame.Options.CustomScripts.MouseButton1Click:Connect(function()
+		sound:Play()
+		script.Parent.Frame.MainFrame.Settings.Visible = false
+		script.Parent.Frame.MainFrame.Settings.BlurSize.Visible = false
+	script.Parent.Frame.MainFrame.Settings.SetBlur.Visible = false
+		script.Parent.Frame.MainFrame.Settings.BlurSize.Visible = false
+	script.Parent.Frame.MainFrame.Settings.SetBlur.Visible = false
+		script.Parent.Frame.MainFrame.GameScripts.Visible = false
+		script.Parent.Frame.MainFrame.Scripts.Visible = true
+	end)
+	--settings tab
+	script.Parent.Frame.Options.Settings.MouseButton1Click:Connect(function()
+		sound:Play()
+		local blursizebox = script.Parent.Frame.MainFrame.Settings.BlurSize
+		local setblur = script.Parent.Frame.MainFrame.Settings.SetBlur
+		
+	script.Parent.Frame.MainFrame.Scripts.Visible = false
+	script.Parent.Frame.MainFrame.GameScripts.Visible = false
+	blursizebox.Visible = true
+	setblur.Visible = true
+	script.Parent.Frame.MainFrame.Settings.Visible = true
+	end)
+	--click for setblur
+	script.Parent.Frame.MainFrame.Settings.SetBlur.MouseButton1Click:Connect(function()
+		
+		blur.Size = script.Parent.Frame.MainFrame.Settings.BlurSize.Text
+	end)
+	
+	
+	local scripts = script.Parent.Frame.MainFrame.Scripts
+	scripts.Admin.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "Inf Yield Admin GUI(FE)"
+	end)
+	scripts.Admin.MouseLeave:Connect(function()
+		descriptclose:Play()
+		descript.TextLabel.Text = ""
+	end)
+	
+	scripts.Repl.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "Takes all tools and copies them then you can play as titans.(LoadTools/Done Respawning, Click a script u want then click replicate then remove mesh)"
+		end)
+		scripts.Repl.MouseLeave:Connect(function()
+			descriptclose:Play()
+			descript.TextLabel.Text = ""
+		end)
+		
+		scripts.AFK.MouseEnter:Connect(function()
+			descriptionOpen:Play()
+			descript.TextLabel.Text = "Simple GUI that makes it so you dont disconnect after 20 minutes"
+		end)
+		scripts.AFK.MouseLeave:Connect(function()
+			descriptclose:Play()
+			descript.TextLabel.Text = ""
+		end)
+	
+	
+	
+	
+	--inf yield
+	script.Parent.Frame.MainFrame.Scripts.Admin.MouseButton1Click:Connect(function()
+		sound:Play()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/tzTXmYf2'),true))()
+	end)
+	--replication script
+	script.Parent.Frame.MainFrame.Scripts.Repl.MouseButton1Click:Connect(function()
+		sound:Play()
+		loadstring(game:HttpGet("https://pastebin.com/raw/9CkmhJj2", true))()
+	end)
+	script.Parent.Frame.MainFrame.Scripts.AFK.MouseButton1Click:Connect(function()
+		sound:Play()
+		loadstring(game:HttpGet("https://pastebin.com/raw/TsVgzGf5", true))()
+	end)
+	--gameopen
+	script.Parent.Frame.Options.GameScripts.MouseButton1Click:Connect(function()
+		sound:Play()
+		script.Parent.Frame.MainFrame.Settings.Visible = false
+	script.Parent.Frame.MainFrame.Settings.SetBlur.Visible = false
+		script.Parent.Frame.MainFrame.Settings.BlurSize.Visible = false
+		script.Parent.Frame.MainFrame.Scripts.Visible = false
+		script.Parent.Frame.MainFrame.GameScripts.Visible = true
+	end)
+	
+	
+	
+	
+	gamescripts.Frame.NinjaLeg.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "AutoFarm, Etc"
+	end)
+	gamescripts.Frame.NinjaLeg.MouseLeave:Connect(function()
+		descriptclose:Play()
+		descript.TextLabel.Text = ""
+	end)
+	
+	gamescripts.Frame.VehicleSim.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "AutoFarm, Crate ESP, Car mods, etc"
+	end)
+	gamescripts.Frame.VehicleSim.MouseLeave:Connect(function()
+		descriptclose:Play()
+		descript.TextLabel.Text = ""
+	end)
+	
+	gamescripts.Frame.CounterBlox.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "Inf Money, ESP GUI Toggle = F, etc"
+	end)
+	gamescripts.Frame.CounterBlox.MouseLeave:Connect(function()
+		descriptclose:Play()
+		descript.TextLabel.Text = ""
+	end)
+	
+	gamescripts.Frame.PrisonLife.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "Get guns, Kill All, team changer, mod gun, etc"
+	end)
+	gamescripts.Frame.PrisonLife.MouseLeave:Connect(function()
+		descriptclose:Play()
+		descript.TextLabel.Text = ""
+	end)
+	
+	gamescripts.Frame.PF.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "Unlock ALL Guns/attachments"
+	end)
+	gamescripts.Frame.PF.MouseLeave:Connect(function()
+		descriptclose:Play()
+		descript.TextLabel.Text = ""
+	end)
+	
+	
+	
+	
+	
+	--ninja legends
+	script.Parent.Frame.MainFrame.GameScripts.Frame.NinjaLeg.MouseButton1Click:Connect(function()
+		sound:Play()
+		loadstring(game:HttpGet('https://pastebin.com/raw/sjVGvJ1S',true))()
+	end)
+	
+	script.Parent.Frame.MainFrame.GameScripts.Frame.VehicleSim.MouseButton1Click:Connect(function()
+		sound:Play()
+		loadstring(game:HttpGet("https://pastebin.com/raw/7kj3dVRu", true))()
+		
+	end)
+	
+	script.Parent.Frame.MainFrame.GameScripts.Frame.CounterBlox.MouseButton1Click:Connect(function()
+		sound:Play()
+			loadstring(game:HttpGet("https://pastebin.com/raw/M1jwv40a", true))()
+		
+	end)
+	
+	script.Parent.Frame.MainFrame.GameScripts.Frame.PrisonLife.MouseButton1Click:Connect(function()
+		sound:Play()
+		loadstring(game:HttpGet("https://pastebin.com/raw/3cwJBkE1", true))()
+		
+	end)
+	
+	script.Parent.Frame.MainFrame.GameScripts.Frame.PF.MouseButton1Click:Connect(function()
+		sound:Play()
+		loadstring(game:HttpGet("https://pastebin.com/raw/1hqc7vxW", true))()
+	end)
+	
+	script.Parent.Frame.Options.Credits.MouseEnter:Connect(function()
+		descriptionOpen:Play()
+		descript.TextLabel.Text = "GUI Made by Cozty#8287, Game scripts and scripts made by other ppl(too many to count)"
+	end)
+	
+	script.Parent.Frame.Options.Credits.MouseLeave:Connect(function()
+		descriptclose:Play()
+		descript.TextLabel.Text = ""
+	end)
+	
+	script.Parent.Frame.MainFrame.Settings.DestroyGUI.MouseButton1Click:Connect(function()
+		blur.Size = 0
+		script.Parent:Destroy()
+	end)
+end
+coroutine.wrap(AJJGV_fake_script)()
