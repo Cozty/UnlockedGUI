@@ -4,7 +4,6 @@ end
 
 
 
-
 -- Instances:
 
 local UnlockedGUI = Instance.new("ScreenGui")
@@ -38,6 +37,11 @@ local ImageLabel = Instance.new("ImageLabel")
 local Close = Instance.new("TextButton")
 local Version = Instance.new("TextLabel")
 local Open = Instance.new("TextButton")
+local ChangeLogs = Instance.new("ImageLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local Title_2 = Instance.new("TextLabel")
+local WhatChanged = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
 
 --[[
 	Properties:
@@ -336,19 +340,118 @@ Open.Text = "Open!"
 Open.TextColor3 = Color3.new(0, 0, 0)
 Open.TextSize = 25
 
+ChangeLogs.Name = "ChangeLogs"
+ChangeLogs.Parent = UnlockedGUI
+ChangeLogs.BackgroundColor3 = Color3.new(1, 1, 1)
+ChangeLogs.BorderColor3 = Color3.new(1, 0.984314, 0.988235)
+ChangeLogs.BorderSizePixel = 0
+ChangeLogs.Position = UDim2.new(1.52600002, 0, 1.56099999, 0)
+ChangeLogs.Size = UDim2.new(0, 183, 0, 183)
+ChangeLogs.Image = "http://www.roblox.com/asset/?id=4342847905"
+
+ImageLabel_2.Parent = ChangeLogs
+ImageLabel_2.BackgroundColor3 = Color3.new(1, 1, 1)
+ImageLabel_2.BackgroundTransparency = 1
+ImageLabel_2.Position = UDim2.new(0.224043727, 0, 0.224043712, 0)
+ImageLabel_2.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=4391751268"
+
+Title_2.Name = "Title"
+Title_2.Parent = ChangeLogs
+Title_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Title_2.BackgroundTransparency = 1
+Title_2.Size = UDim2.new(0, 317, 0, 48)
+Title_2.Font = Enum.Font.SourceSans
+Title_2.Text = "ChangeLogs"
+Title_2.TextColor3 = Color3.new(0, 0, 0)
+Title_2.TextSize = 14
+Title_2.TextTransparency = 1
+
+WhatChanged.Name = "WhatChanged"
+WhatChanged.Parent = ChangeLogs
+WhatChanged.BackgroundColor3 = Color3.new(1, 1, 1)
+WhatChanged.BackgroundTransparency = 1
+WhatChanged.Position = UDim2.new(0, 0, 0.151419565, 0)
+WhatChanged.Size = UDim2.new(0, 317, 0, 269)
+WhatChanged.Font = Enum.Font.SourceSans
+WhatChanged.Text = "     [+]   Added This Changelogs."
+WhatChanged.TextColor3 = Color3.new(0, 0, 0)
+WhatChanged.TextSize = 14
+WhatChanged.TextTransparency = 1
+WhatChanged.TextXAlignment = Enum.TextXAlignment.Left
+WhatChanged.TextYAlignment = Enum.TextYAlignment.Top
+
+Close_2.Name = "Close"
+Close_2.Parent = ChangeLogs
+Close_2.BackgroundColor3 = Color3.new(1, 1, 1)
+Close_2.BackgroundTransparency = 1
+Close_2.Position = UDim2.new(0.826498389, 0, 0, 0)
+Close_2.Size = UDim2.new(0, 55, 0, 50)
+Close_2.Font = Enum.Font.SourceSans
+Close_2.Text = "_"
+Close_2.TextColor3 = Color3.new(0, 0, 0)
+Close_2.TextSize = 25
+Close_2.TextTransparency = 1
+
 --[[
 	 Scripts:
 --]]
 
-local function ETMJNFQ_fake_script() -- UnlockedGUI.LocalScript 
+local function ZWAK_fake_script() -- UnlockedGUI.LocalScript 
 	local script = Instance.new('LocalScript', UnlockedGUI)
 
 	local Mainframe = script.Parent.MainFrame
 	Mainframe.Draggable = true
 	Mainframe.Active = true
 	Mainframe.Selectable = true
+	local ChangeLogs = script.Parent.ChangeLogs
+	ChangeLogs.Draggable = true
+	ChangeLogs.Active = true
+	ChangeLogs.Selectable  = true
+	local TIHeader = TweenInfo.new(0.3,Enum.EasingStyle.Linear,Enum.EasingDirection.In)
+	
+	local TI = TweenInfo.new(0.5,Enum.EasingStyle.Linear,Enum.EasingDirection.Out)
+	local TS = game:GetService("TweenService")
 	
 	local header1 = script.Parent.MainFrame.Header
+	
+	wait(1)
+	local ComeInChangeLogs = TS:Create(script.Parent.ChangeLogs,TI,{Position=UDim2.new(0.426, 0,0.361, 0)})
+	ComeInChangeLogs:Play()
+	wait(2)
+	local SizeBigChangeLogs = TS:Create(script.Parent.ChangeLogs,TI,{Size=UDim2.new(0, 317,0, 317)})
+	SizeBigChangeLogs:Play()
+	wait(0.1)
+	local FadeOut = TS:Create(script.Parent.ChangeLogs.ImageLabel,TI,{ImageTransparency=1})
+	FadeOut:Play()
+	wait(0.7)
+	local TitleFadeIn = TS:Create(script.Parent.ChangeLogs.Title,TI,{TextTransparency=0})
+	local CloseFadeIn = TS:Create(script.Parent.ChangeLogs.Close,TI,{TextTransparency=0})
+	local WhatChanged = TS:Create(script.Parent.ChangeLogs.WhatChanged,TI,{TextTransparency=0})
+	WhatChanged:Play()
+	CloseFadeIn:Play()
+	TitleFadeIn:Play()
+	ChangeLogs.Close.MouseButton1Click:Connect(function()
+		local FadeOutText = ChangeLogs.Title
+		local FadeOutALLTEXT = TS:Create(FadeOutText,TIHeader,{TextTransparency=1})
+		FadeOutALLTEXT:Play()
+		local FadeOutText2 = ChangeLogs.Close
+			local FadeOutALLTEXT2 = TS:Create(FadeOutText2,TIHeader,{TextTransparency=1})
+	FadeOutALLTEXT2:Play()
+		local FadeOutText3 = ChangeLogs.WhatChanged
+	
+		local FadeOutALLTEXT3 = TS:Create(FadeOutText3,TIHeader,{TextTransparency=1})
+	FadeOutALLTEXT:Play()
+	FadeOutALLTEXT2:Play()
+	FadeOutALLTEXT3:Play()
+	wait(0.4)
+	local NormalSizeCL = TS:Create(ChangeLogs,TIHeader,{Size=UDim2.new(0, 183,0, 183)})
+	NormalSizeCL:Play()
+	wait(0.5)
+	local GoAwayCL = TS:Create(ChangeLogs,TIHeader,{Position=UDim2.new(1.526, 0,1.561, 0)})
+	GoAwayCL:Play()
+	end)
+	
 	
 	local OpenButton = script.Parent.Open
 	local welcomeFrame = script.Parent.Welcome
@@ -357,9 +460,6 @@ local function ETMJNFQ_fake_script() -- UnlockedGUI.LocalScript
 	local sound = Instance.new("Sound")
 	sound.Parent = Mainframe
 	sound.SoundId = "rbxassetid://156286438"
-	local TS = game:GetService("TweenService")
-	local TIHeader = TweenInfo.new(0.3,Enum.EasingStyle.Linear,Enum.EasingDirection.In)
-	local TI = TweenInfo.new(0.5,Enum.EasingStyle.Linear,Enum.EasingDirection.Out)
 	wait(1)
 	local WelcomeTextComeOut = TS:Create(welcomeFrame.TextLabel,TI,{Position=UDim2.new(0.002, 0,0.372, 0)})
 	WelcomeTextComeOut:Play()
@@ -568,4 +668,4 @@ local function ETMJNFQ_fake_script() -- UnlockedGUI.LocalScript
 		end
 	end)
 end
-coroutine.wrap(ETMJNFQ_fake_script)()
+coroutine.wrap(ZWAK_fake_script)()
